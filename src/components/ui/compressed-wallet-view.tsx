@@ -132,7 +132,7 @@ export function CompressedWalletView() {
                         href={`https://explorer.solana.com/tx/${signature}?cluster=devnet`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
+                        className="text-green-600 hover:underline"
                       >
                         {signature.slice(0, 20)}...{signature.slice(-4)}
                       </a>

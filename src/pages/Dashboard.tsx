@@ -77,7 +77,7 @@ const Dashboard = () => {
                     key={token.id}
                     className={`w-full p-3 text-left rounded-md transition-colors ${
                       activeToken === token.id 
-                        ? 'bg-purple-100 text-purple-700 border-l-4 border-purple-500' 
+                        ? 'bg-green-100 text-green-700 border-l-4 border-green-500' 
                         : 'hover:bg-gray-100 border-l-4 border-transparent'
                     }`}
                     onClick={() => setActiveToken(token.id)}

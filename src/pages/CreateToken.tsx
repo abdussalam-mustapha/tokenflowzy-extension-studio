@@ -371,8 +371,8 @@ const CreateToken = () => {
                 }`}
               >
                 <div className={`flex items-center justify-center w-8 h-8 rounded-full ${
-                  currentStep > i + 1 ? 'bg-purple-600' : 
-                  currentStep === i + 1 ? 'bg-purple-600' : 'bg-gray-200'
+                  currentStep > i + 1 ? 'bg-green-600' : 
+                  currentStep === i + 1 ? 'bg-green-600' : 'bg-gray-200'
                 } shrink-0`}>
                   {currentStep > i + 1 ? (
                     <svg className="w-3.5 h-3.5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -388,7 +388,7 @@ const CreateToken = () => {
                 </div>
                 <div className="ml-2 hidden sm:block">
                   <h3 className={`text-sm font-medium ${
-                    currentStep === i + 1 ? 'text-purple-600' : 'text-gray-900'
+                    currentStep === i + 1 ? 'text-green-600' : 'text-gray-900'
                   }`}>
                     {step.name}
                   </h3>
@@ -396,7 +396,7 @@ const CreateToken = () => {
                 </div>
                 {i < steps.length - 1 && (
                   <div className={`flex-1 h-0.5 mx-4 ${
-                    currentStep > i + 1 ? 'bg-purple-600' : 'bg-gray-200'
+                    currentStep > i + 1 ? 'bg-green-600' : 'bg-gray-200'
                   }`}></div>
                 )}
               </li>
@@ -427,7 +427,7 @@ const CreateToken = () => {
             ) : (
               <Button 
                 onClick={handleSubmit}
-                className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
+                className="bg-gradient-to-r from-green-600 to-black hover:from-green-700 hover:to-gray-900"
               >
                 Preview Token
               </Button>

@@ -63,9 +63,9 @@ export default function CompressedWalletPage() {
                   </div>
                 </div>
               ) : zkCompression.isInitializing ? (
-                <div className="p-3 border rounded-md bg-blue-50 border-blue-200 text-blue-700 text-sm">
+                <div className="p-3 border rounded-md bg-green-50 border-green-200 text-green-700 text-sm">
                   <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 border-2 border-blue-700 border-t-transparent rounded-full animate-spin" />
+                    <div className="w-4 h-4 border-2 border-green-700 border-t-transparent rounded-full animate-spin" />
                     <span>Initializing ZK Compression...</span>
                   </div>
                 </div>

@@ -45,7 +45,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
@@ -86,7 +86,7 @@ const Header = () => {
 
           {/* Connect button */}
           <div className="hidden md:flex items-center">
-            <WalletConnectButton className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white" />
+            <WalletConnectButton className="bg-gradient-to-r from-green-600 to-black hover:from-green-700 hover:to-gray-900 text-white" />
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@ const Header = () => {
             Compressed Wallet
           </Link>
           <div className="p-3">
-            <WalletConnectButton className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white" />
+            <WalletConnectButton className="w-full bg-gradient-to-r from-green-600 to-black hover:from-green-700 hover:to-gray-900 text-white" />
           </div>
         </div>
       </div>
