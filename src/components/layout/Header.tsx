@@ -1,7 +1,7 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { WalletConnectButton } from '@/components/ui/wallet-connect-button';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ const Header = () => {
           </div>
           
           {/* Desktop menu */}
-          <nav className="hidden md:flex space-x-10">
+          <nav className="hidden md:flex space-x-8">
             <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Home
             </Link>
@@ -28,6 +28,16 @@ const Header = () => {
             </Link>
             <Link to="/dashboard" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Dashboard
+            </Link>
+            <Link to="/zk-compression" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              ZK Compression
+            </Link>
+            <Link to="/compressed-wallet" className="text-base font-medium text-gray-500 hover:text-gray-900 flex items-center">
+              <span className="relative flex h-2 w-2 mr-1">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              Wallet
             </Link>
           </nav>
 
@@ -76,9 +86,7 @@ const Header = () => {
 
           {/* Connect button */}
           <div className="hidden md:flex items-center">
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white">
-              Connect Wallet
-            </Button>
+            <WalletConnectButton className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white" />
           </div>
         </div>
       </div>
@@ -104,10 +112,24 @@ const Header = () => {
           >
             Dashboard
           </Link>
+          <Link
+            to="/zk-compression"
+            className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800"
+          >
+            ZK Compression
+          </Link>
+          <Link
+            to="/compressed-wallet"
+            className="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 flex items-center"
+          >
+            <span className="relative flex h-2 w-2 mr-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            Compressed Wallet
+          </Link>
           <div className="p-3">
-            <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white">
-              Connect Wallet
-            </Button>
+            <WalletConnectButton className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white" />
           </div>
         </div>
       </div>
