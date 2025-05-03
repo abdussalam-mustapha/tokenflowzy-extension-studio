@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
-                TokenFlowzy
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-black">
+                Blockpool
               </span>
             </Link>
             <p className="text-gray-500 text-base">
@@ -125,7 +125,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; 2025 TokenFlowzy. All rights reserved.
+            &copy; 2025 Blockpool. All rights reserved.
           </p>
         </div>
       </div>

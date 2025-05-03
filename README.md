@@ -1,7 +1,7 @@
-# TokenFlowzy - Solana ZK Compression Toolkit
+# Blockpool - Solana ZK Compression Toolkit
 
 <p align="center">
-  <img src="./public/logo.svg" alt="TokenFlowzy Logo" width="200" />
+  <img src="./public/logo.svg" alt="Blockpool Logo" width="200" />
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 
 ## 🚀 Overview
 
-TokenFlowzy is a comprehensive toolkit for creating, managing, and interacting with compressed tokens on the Solana blockchain. By leveraging ZK Compression technology, TokenFlowzy enables dramatic cost reduction for token operations while maintaining the security and verifiability of on-chain assets.
+Blockpool is a comprehensive toolkit for creating, managing, and interacting with compressed tokens on the Solana blockchain. By leveraging ZK Compression technology, Blockpool enables dramatic cost reduction for token operations while maintaining the security and verifiability of on-chain assets.
 
 ### ✨ Key Features
 
@@ -40,8 +40,8 @@ TokenFlowzy is a comprehensive toolkit for creating, managing, and interacting w
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/tokenflowzy.git
-cd tokenflowzy
+git clone https://github.com/your-username/blockpool.git
+cd blockpool
 npm install
 ```
 
@@ -111,7 +111,7 @@ ZK Compression is a breakthrough technology on Solana that allows for storing to
 - **Enhanced Security**: Proof-based verification ensures data integrity
 - **Massive Scalability**: Support for extremely large collections without blockchain congestion
 
-TokenFlowzy implements the Light Protocol's ZK Compression standard, which is compatible with the Solana blockchain's state compression program.
+Blockpool implements the Light Protocol's ZK Compression standard, which is compatible with the Solana blockchain's state compression program.
 
 ## 🛣️ Roadmap
 
@@ -123,7 +123,7 @@ TokenFlowzy implements the Light Protocol's ZK Compression standard, which is co
 
 ## 🔒 Security
 
-TokenFlowzy implements several security best practices:
+Blockpool implements several security best practices:
 
 - No private keys are ever stored or transmitted
 - All transactions require explicit user approval
